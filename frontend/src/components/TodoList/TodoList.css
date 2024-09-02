@@ -1,0 +1,41 @@
+/* TodoList.css */
+
+/* Styling for the main container */
+.todo-list {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 20px; 
+  }
+  
+  /* Styling for each todo item (card) */
+  .todo-item {
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+    margin: 10px 0; 
+    width: 90%;
+    max-width: 600px; 
+    transition: transform 0.3s ease; 
+  }
+  
+  /* Hover effect for cards */
+  .todo-item:hover {
+    transform: translateY(-5px); 
+  }
+  
+  /* Title styling */
+  .todo-item h3 {
+    margin: 0 0 10px; 
+    font-size: 1.5rem;
+    color: #333; 
+  }
+  
+  /* Description and other details styling */
+  .todo-item p {
+    margin: 5px 0; 
+    color: #666;
+    font-size: 1rem; 
+  }
+  

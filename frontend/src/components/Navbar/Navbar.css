@@ -1,0 +1,133 @@
+.navbar {
+    display: flex;
+   position: relative;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    width: 100%;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #6c63ff;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .circle::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .logo h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: 100px;
+    padding: 0;
+  }
+  .nav-links li{
+    margin-right: 30px;
+  }
+  
+  .home-icon{
+    margin-right: 8px;
+    font-size: 20px;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .button {
+    background-color: #d5990e;
+    color: #fff;
+    padding: 10px 11px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 25px;
+  }
+  .dropdown{
+    right: 10px;
+  }
+  
+  
+  .notification {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    position: absolute;
+    text-decoration: none;
+    right: 200px;
+    color: #340d81;
+    
+  }
+  
+  .bell {
+    font-size: 25px;
+    margin-right: 5px;
+  }
+  
+  .notification-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #6c63ff;
+    margin-left: 5px;
+    position: absolute;
+    top: 4px;
+    right:9px;
+  }
+  .profile {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 90px;
+  }
+  
+  .profile-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .profile-name {
+    font-size: 14px;
+    color: #333; /* Adjust color to fit the design */
+  }
